@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @State private var selectedFilter: TweetFilterViewModel = .tweets
+    
     var body: some View {
         VStack(alignment: .leading) {
             headerView
@@ -15,6 +17,32 @@ struct ProfileView: View {
             actionButtons
             
             userInfoDetails
+            
+            HStack {
+                ForEach(TweetFilterViewModel.allCases, id: \.rawValue) { item in
+                    VStack {
+                        Text(item.title)
+                            .font(.subheadline)
+                            .fontWeight(selectedFilter == item ? .semibold: .regular)
+                            .foregroundColor(selectedFilter == item ? .black: .secondary)
+                        
+                        if selectedFilter == item {
+                            Capsule()
+                                .foregroundColor(Color(.systemBlue))
+                                .frame(height: 3)
+                        } else {
+                            Capsule()
+                                .foregroundColor(Color(.clear))
+                                .frame(height: 3)
+                        }
+                    }
+                    .onTapGesture {
+                        withAnimation(.easeInOut) {
+                            selectedFilter = item
+                        }
+                    }
+                }
+            }
             
             Spacer()
         }

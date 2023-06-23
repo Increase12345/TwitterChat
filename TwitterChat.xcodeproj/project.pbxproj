@@ -18,6 +18,7 @@
 		4060CF922A464B8400E046B5 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF912A464B8400E046B5 /* NotificationsView.swift */; };
 		4060CF942A464BA800E046B5 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF932A464BA800E046B5 /* MessagesView.swift */; };
 		4060CF982A4650A700E046B5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF972A4650A700E046B5 /* ProfileView.swift */; };
+		4060CF9A2A465B8700E046B5 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF992A465B8700E046B5 /* TweetFilterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4060CF912A464B8400E046B5 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		4060CF932A464BA800E046B5 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		4060CF972A4650A700E046B5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4060CF992A465B8700E046B5 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		4060CF952A46508C00E046B5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4060CF992A465B8700E046B5 /* TweetFilterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				4060CF982A4650A700E046B5 /* ProfileView.swift in Sources */,
 				4060CF702A46431300E046B5 /* ContentView.swift in Sources */,
 				4060CF872A4644DD00E046B5 /* TweetRowView.swift in Sources */,
+				4060CF9A2A465B8700E046B5 /* TweetFilterViewModel.swift in Sources */,
 				4060CF842A4643C200E046B5 /* FeedView.swift in Sources */,
 				4060CF6E2A46431300E046B5 /* TwitterChatApp.swift in Sources */,
 				4060CF902A464B6D00E046B5 /* ExploreView.swift in Sources */,
