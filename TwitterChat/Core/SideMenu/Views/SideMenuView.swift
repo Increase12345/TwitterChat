@@ -26,18 +26,22 @@ struct SideMenuView: View {
             }
             .padding(.leading)
             
-            ForEach(SideMenuViewModel.allCases, id: \.rawValue) { option in
-                HStack(spacing: 16) {
-                    Image(systemName: option.imageName)
-                        .font(.headline)
-                        .foregroundColor(.secondary)
-                    Text(option.title)
-                        .font(.subheadline)
-                    
-                    Spacer()
+            ForEach(SideMenuViewModel.allCases, id: \.rawValue) { vm in
+                if vm == .profile {
+                    NavigationLink {
+                        ProfileView()
+                    } label: {
+                        SideMenuOptionRowView(vm: vm)
+                    }
+                } else if vm == .logout {
+                    Button {
+                        
+                    } label: {
+                        SideMenuOptionRowView(vm: vm)
+                    }
+                } else {
+                    SideMenuOptionRowView(vm: vm)
                 }
-                .frame(height: 40)
-                .padding(.horizontal)
             }
             Spacer()
         }
@@ -49,3 +53,4 @@ struct SideMenuView_Previews: PreviewProvider {
         SideMenuView()
     }
 }
+
