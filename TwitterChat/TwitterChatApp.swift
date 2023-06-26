@@ -25,7 +25,7 @@ struct TwitterChatApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
+            NavigationView {
                ContentView()
             }
             .environmentObject(vm)

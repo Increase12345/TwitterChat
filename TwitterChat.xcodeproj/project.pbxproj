@@ -37,6 +37,7 @@
 		40F70C042A4936DE00F52CBD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 40F70C032A4936DE00F52CBD /* FirebaseFirestoreSwift */; };
 		40F70C062A4936DE00F52CBD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 40F70C052A4936DE00F52CBD /* FirebaseStorage */; };
 		40F70C082A493EF100F52CBD /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F70C072A493EF100F52CBD /* AuthViewModel.swift */; };
+		40F70C0A2A4A3CC500F52CBD /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F70C092A4A3CC500F52CBD /* ProfilePhotoSelectorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		4060CFA92A48CF0900E046B5 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		4060CFAB2A48DD7300E046B5 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
 		40F70C072A493EF100F52CBD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		40F70C092A4A3CC500F52CBD /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				403C13BF2A4915AC00C28785 /* LoginView.swift */,
 				403C13C12A4915BB00C28785 /* RegistrationView.swift */,
+				40F70C092A4A3CC500F52CBD /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				4060CF842A4643C200E046B5 /* FeedView.swift in Sources */,
 				4060CFA42A48CCDE00E046B5 /* SideMenuView.swift in Sources */,
 				403C13C92A491DEB00C28785 /* AuthHeaderView.swift in Sources */,
+				40F70C0A2A4A3CC500F52CBD /* ProfilePhotoSelectorView.swift in Sources */,
 				4060CF6E2A46431300E046B5 /* TwitterChatApp.swift in Sources */,
 				4060CF902A464B6D00E046B5 /* ExploreView.swift in Sources */,
 				4060CFA82A48CD1500E046B5 /* SideMenuViewModel.swift in Sources */,

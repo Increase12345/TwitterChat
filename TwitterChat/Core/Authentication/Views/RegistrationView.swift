@@ -17,6 +17,8 @@ struct RegistrationView: View {
     
     var body: some View {
         VStack {
+            //NavigationLink(destination: ProfilePhotoSelectorView(), isActive: $vm.didAuthenticateUser, label: {})
+            
             // header view
             AuthHeaderView(title1: "Get started.", title2: "Create you account")
             
@@ -25,7 +27,7 @@ struct RegistrationView: View {
                 CustomInputFields(imageName: "envelope", placeholderText: "Email", text: $email)
                 CustomInputFields(imageName: "person", placeholderText: "User name", text: $userName)
                 CustomInputFields(imageName: "person", placeholderText: "Full name", text: $fullName)
-                CustomInputFields(imageName: "lock", placeholderText: "Password", text: $password)
+                CustomInputFields(imageName: "lock", placeholderText: "Password", isSecureField: true, text: $password)
             }
             .padding(32)
             
