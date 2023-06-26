@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		403C13B92A48E4C900C28785 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13B82A48E4C900C28785 /* NewTweetView.swift */; };
 		403C13BB2A48E5CA00C28785 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13BA2A48E5CA00C28785 /* TextArea.swift */; };
+		403C13C02A4915AC00C28785 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13BF2A4915AC00C28785 /* LoginView.swift */; };
+		403C13C22A4915BB00C28785 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13C12A4915BB00C28785 /* RegistrationView.swift */; };
 		4060CF6E2A46431300E046B5 /* TwitterChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF6D2A46431300E046B5 /* TwitterChatApp.swift */; };
 		4060CF702A46431300E046B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF6F2A46431300E046B5 /* ContentView.swift */; };
 		4060CF722A46431500E046B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4060CF712A46431500E046B5 /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		403C13B82A48E4C900C28785 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
 		403C13BA2A48E5CA00C28785 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		403C13BF2A4915AC00C28785 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		403C13C12A4915BB00C28785 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		4060CF6A2A46431300E046B5 /* TwitterChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4060CF6D2A46431300E046B5 /* TwitterChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterChatApp.swift; sourceTree = "<group>"; };
 		4060CF6F2A46431300E046B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +90,31 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		403C13BC2A49158500C28785 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				403C13BE2A49159800C28785 /* ViewModel */,
+				403C13BD2A49159200C28785 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		403C13BD2A49159200C28785 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				403C13BF2A4915AC00C28785 /* LoginView.swift */,
+				403C13C12A4915BB00C28785 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		403C13BE2A49159800C28785 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4060CF612A46431300E046B5 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +157,7 @@
 		4060CF7B2A46433100E046B5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				403C13BC2A49158500C28785 /* Authentication */,
 				4060CF7F2A46435800E046B5 /* Components */,
 				403C13B52A48E4A400C28785 /* UploadTweet */,
 				4060CFA02A48CC8B00E046B5 /* SideMenu */,
@@ -394,6 +424,8 @@
 				4060CFA82A48CD1500E046B5 /* SideMenuViewModel.swift in Sources */,
 				403C13BB2A48E5CA00C28785 /* TextArea.swift in Sources */,
 				4060CF9F2A46602E00E046B5 /* UserRowView.swift in Sources */,
+				403C13C02A4915AC00C28785 /* LoginView.swift in Sources */,
+				403C13C22A4915BB00C28785 /* RegistrationView.swift in Sources */,
 				403C13B92A48E4C900C28785 /* NewTweetView.swift in Sources */,
 				4060CFAC2A48DD7300E046B5 /* SideMenuOptionRowView.swift in Sources */,
 				4060CF8A2A464A3D00E046B5 /* MainTabView.swift in Sources */,
