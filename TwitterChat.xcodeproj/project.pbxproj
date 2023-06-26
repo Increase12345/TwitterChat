@@ -11,6 +11,8 @@
 		403C13BB2A48E5CA00C28785 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13BA2A48E5CA00C28785 /* TextArea.swift */; };
 		403C13C02A4915AC00C28785 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13BF2A4915AC00C28785 /* LoginView.swift */; };
 		403C13C22A4915BB00C28785 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13C12A4915BB00C28785 /* RegistrationView.swift */; };
+		403C13C42A49172600C28785 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13C32A49172600C28785 /* RoundedShape.swift */; };
+		403C13C62A491C0A00C28785 /* CustomInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13C52A491C0A00C28785 /* CustomInputFields.swift */; };
 		4060CF6E2A46431300E046B5 /* TwitterChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF6D2A46431300E046B5 /* TwitterChatApp.swift */; };
 		4060CF702A46431300E046B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF6F2A46431300E046B5 /* ContentView.swift */; };
 		4060CF722A46431500E046B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4060CF712A46431500E046B5 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		403C13BA2A48E5CA00C28785 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		403C13BF2A4915AC00C28785 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		403C13C12A4915BB00C28785 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		403C13C32A49172600C28785 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		403C13C52A491C0A00C28785 /* CustomInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputFields.swift; sourceTree = "<group>"; };
 		4060CF6A2A46431300E046B5 /* TwitterChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4060CF6D2A46431300E046B5 /* TwitterChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterChatApp.swift; sourceTree = "<group>"; };
 		4060CF6F2A46431300E046B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				4060CF9D2A46602100E046B5 /* Users */,
 				4060CF852A4644B100E046B5 /* Tweets */,
 				403C13BA2A48E5CA00C28785 /* TextArea.swift */,
+				403C13C32A49172600C28785 /* RoundedShape.swift */,
+				403C13C52A491C0A00C28785 /* CustomInputFields.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -427,6 +433,8 @@
 				403C13C02A4915AC00C28785 /* LoginView.swift in Sources */,
 				403C13C22A4915BB00C28785 /* RegistrationView.swift in Sources */,
 				403C13B92A48E4C900C28785 /* NewTweetView.swift in Sources */,
+				403C13C42A49172600C28785 /* RoundedShape.swift in Sources */,
+				403C13C62A491C0A00C28785 /* CustomInputFields.swift in Sources */,
 				4060CFAC2A48DD7300E046B5 /* SideMenuOptionRowView.swift in Sources */,
 				4060CF8A2A464A3D00E046B5 /* MainTabView.swift in Sources */,
 				4060CF922A464B8400E046B5 /* NotificationsView.swift in Sources */,
