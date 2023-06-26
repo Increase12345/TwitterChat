@@ -36,6 +36,7 @@
 		40F70C022A4936DE00F52CBD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 40F70C012A4936DE00F52CBD /* FirebaseFirestore */; };
 		40F70C042A4936DE00F52CBD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 40F70C032A4936DE00F52CBD /* FirebaseFirestoreSwift */; };
 		40F70C062A4936DE00F52CBD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 40F70C052A4936DE00F52CBD /* FirebaseStorage */; };
+		40F70C082A493EF100F52CBD /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F70C072A493EF100F52CBD /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		4060CFA72A48CD1500E046B5 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		4060CFA92A48CF0900E046B5 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		4060CFAB2A48DD7300E046B5 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
+		40F70C072A493EF100F52CBD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		403C13BE2A49159800C28785 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				40F70C072A493EF100F52CBD /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				403C13C22A4915BB00C28785 /* RegistrationView.swift in Sources */,
 				403C13B92A48E4C900C28785 /* NewTweetView.swift in Sources */,
 				403C13C42A49172600C28785 /* RoundedShape.swift in Sources */,
+				40F70C082A493EF100F52CBD /* AuthViewModel.swift in Sources */,
 				403C13C62A491C0A00C28785 /* CustomInputFields.swift in Sources */,
 				4060CFAC2A48DD7300E046B5 /* SideMenuOptionRowView.swift in Sources */,
 				4060CF8A2A464A3D00E046B5 /* MainTabView.swift in Sources */,

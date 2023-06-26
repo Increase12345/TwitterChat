@@ -21,11 +21,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct TwitterChatApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    @StateObject var vm = AuthViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                LoginView()
+               ContentView()
             }
+            .environmentObject(vm)
         }
     }
 }
