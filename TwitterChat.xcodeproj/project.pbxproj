@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		403C13B92A48E4C900C28785 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13B82A48E4C900C28785 /* NewTweetView.swift */; };
+		403C13BB2A48E5CA00C28785 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13BA2A48E5CA00C28785 /* TextArea.swift */; };
 		4060CF6E2A46431300E046B5 /* TwitterChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF6D2A46431300E046B5 /* TwitterChatApp.swift */; };
 		4060CF702A46431300E046B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF6F2A46431300E046B5 /* ContentView.swift */; };
 		4060CF722A46431500E046B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4060CF712A46431500E046B5 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		403C13B82A48E4C900C28785 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
+		403C13BA2A48E5CA00C28785 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		4060CF6A2A46431300E046B5 /* TwitterChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4060CF6D2A46431300E046B5 /* TwitterChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterChatApp.swift; sourceTree = "<group>"; };
 		4060CF6F2A46431300E046B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		403C13B52A48E4A400C28785 /* UploadTweet */ = {
+			isa = PBXGroup;
+			children = (
+				403C13B72A48E4B500C28785 /* ViewModels */,
+				403C13B62A48E4AF00C28785 /* Views */,
+			);
+			path = UploadTweet;
+			sourceTree = "<group>";
+		};
+		403C13B62A48E4AF00C28785 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				403C13B82A48E4C900C28785 /* NewTweetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		403C13B72A48E4B500C28785 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		4060CF612A46431300E046B5 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				4060CF7F2A46435800E046B5 /* Components */,
+				403C13B52A48E4A400C28785 /* UploadTweet */,
 				4060CFA02A48CC8B00E046B5 /* SideMenu */,
 				4060CF8E2A464B2200E046B5 /* Profile */,
 				4060CF8D2A464B0A00E046B5 /* Explore */,
@@ -138,6 +167,7 @@
 			children = (
 				4060CF9D2A46602100E046B5 /* Users */,
 				4060CF852A4644B100E046B5 /* Tweets */,
+				403C13BA2A48E5CA00C28785 /* TextArea.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -362,7 +392,9 @@
 				4060CF6E2A46431300E046B5 /* TwitterChatApp.swift in Sources */,
 				4060CF902A464B6D00E046B5 /* ExploreView.swift in Sources */,
 				4060CFA82A48CD1500E046B5 /* SideMenuViewModel.swift in Sources */,
+				403C13BB2A48E5CA00C28785 /* TextArea.swift in Sources */,
 				4060CF9F2A46602E00E046B5 /* UserRowView.swift in Sources */,
+				403C13B92A48E4C900C28785 /* NewTweetView.swift in Sources */,
 				4060CFAC2A48DD7300E046B5 /* SideMenuOptionRowView.swift in Sources */,
 				4060CF8A2A464A3D00E046B5 /* MainTabView.swift in Sources */,
 				4060CF922A464B8400E046B5 /* NotificationsView.swift in Sources */,
