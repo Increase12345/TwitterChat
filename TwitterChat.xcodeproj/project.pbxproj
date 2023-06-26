@@ -13,6 +13,7 @@
 		403C13C22A4915BB00C28785 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13C12A4915BB00C28785 /* RegistrationView.swift */; };
 		403C13C42A49172600C28785 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13C32A49172600C28785 /* RoundedShape.swift */; };
 		403C13C62A491C0A00C28785 /* CustomInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13C52A491C0A00C28785 /* CustomInputFields.swift */; };
+		403C13C92A491DEB00C28785 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13C82A491DEB00C28785 /* AuthHeaderView.swift */; };
 		4060CF6E2A46431300E046B5 /* TwitterChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF6D2A46431300E046B5 /* TwitterChatApp.swift */; };
 		4060CF702A46431300E046B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF6F2A46431300E046B5 /* ContentView.swift */; };
 		4060CF722A46431500E046B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4060CF712A46431500E046B5 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		403C13C12A4915BB00C28785 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		403C13C32A49172600C28785 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		403C13C52A491C0A00C28785 /* CustomInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputFields.swift; sourceTree = "<group>"; };
+		403C13C82A491DEB00C28785 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		4060CF6A2A46431300E046B5 /* TwitterChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4060CF6D2A46431300E046B5 /* TwitterChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterChatApp.swift; sourceTree = "<group>"; };
 		4060CF6F2A46431300E046B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		403C13C72A491DCD00C28785 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				403C13C82A491DEB00C28785 /* AuthHeaderView.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		4060CF612A46431300E046B5 = {
@@ -199,6 +209,7 @@
 		4060CF7F2A46435800E046B5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				403C13C72A491DCD00C28785 /* Authentication */,
 				4060CF9D2A46602100E046B5 /* Users */,
 				4060CF852A4644B100E046B5 /* Tweets */,
 				403C13BA2A48E5CA00C28785 /* TextArea.swift */,
@@ -425,6 +436,7 @@
 				4060CF9A2A465B8700E046B5 /* TweetFilterViewModel.swift in Sources */,
 				4060CF842A4643C200E046B5 /* FeedView.swift in Sources */,
 				4060CFA42A48CCDE00E046B5 /* SideMenuView.swift in Sources */,
+				403C13C92A491DEB00C28785 /* AuthHeaderView.swift in Sources */,
 				4060CF6E2A46431300E046B5 /* TwitterChatApp.swift in Sources */,
 				4060CF902A464B6D00E046B5 /* ExploreView.swift in Sources */,
 				4060CFA82A48CD1500E046B5 /* SideMenuViewModel.swift in Sources */,

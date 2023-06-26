@@ -12,26 +12,11 @@ struct LoginView: View {
     @State private var password = ""
     
     var body: some View {
-        
         // parent container
         VStack {
             
             // header view
-            VStack(alignment: .leading) {
-                HStack { Spacer() }
-                
-                Text("Hello.")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                Text("Welcome Back")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-            }
-            .frame(height: 260)
-            .padding(.leading)
-            .background(Color(.systemBlue))
-            .foregroundColor(.white)
-            .clipShape(RoundedShape(corners: [.bottomRight]))
+            AuthHeaderView(title1: "Hello.", title2: "Welcome Back.")
             
             VStack(spacing: 40) {
                 CustomInputFields(imageName: "envelope", placeholderText: "Email", text: $email)
