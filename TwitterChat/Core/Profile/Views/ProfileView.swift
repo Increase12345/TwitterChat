@@ -9,13 +9,13 @@ import SwiftUI
 import Kingfisher
 
 struct ProfileView: View {
+    @ObservedObject var vm: ProfileViewModel
     @State private var selectedFilter: TweetFilterViewModel = .tweets
     @Environment(\.dismiss) var dismiss
     @Namespace var animation
-    private let user: User
     
     init(user: User) {
-        self.user = user
+        self.vm = ProfileViewModel(user: user)
     }
     
     var body: some View {
@@ -59,7 +59,7 @@ extension ProfileView {
                         .offset(x: 10, y: 0)
                 }
                 
-                KFImage(URL(string: user.profileImageUrl))
+                KFImage(URL(string: vm.user.profileImageUrl))
                     .resizable()
                     .scaledToFill()
                     .clipShape(Circle())
@@ -95,13 +95,13 @@ extension ProfileView {
     var userInfoDetails: some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack {
-                Text(user.fullName)
+                Text(vm.user.fullName)
                     .font(.title2.bold())
                 Image(systemName: "checkmark.seal.fill")
                     .foregroundColor(Color(.systemBlue))
             }
             
-            Text("@\(user.userName)")
+            Text("@\(vm.user.userName)")
                 .font(.subheadline)
                 .foregroundColor(.secondary)
             Text("I love to code with Swift")
@@ -163,8 +163,8 @@ extension ProfileView {
     var tweetsView: some View {
         ScrollView {
             LazyVStack {
-                ForEach(0..<9, id: \.self) { _ in
-                    //TweetRowView()
+                ForEach(vm.tweets, id: \.id) { tweet in
+                    TweetRowView(tweet: tweet)
                 }
             }
         }
