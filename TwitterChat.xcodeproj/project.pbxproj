@@ -47,6 +47,8 @@
 		40F70C1A2A4BDC4600F52CBD /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F70C192A4BDC4600F52CBD /* SearchBar.swift */; };
 		40F70C1C2A4BE11700F52CBD /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F70C1B2A4BE11600F52CBD /* TweetService.swift */; };
 		40F70C1E2A4BE27300F52CBD /* UploadTweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F70C1D2A4BE27300F52CBD /* UploadTweetViewModel.swift */; };
+		40F70C202A4C98C600F52CBD /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F70C1F2A4C98C600F52CBD /* FeedViewModel.swift */; };
+		40F70C222A4C998300F52CBD /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F70C212A4C998300F52CBD /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		40F70C192A4BDC4600F52CBD /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		40F70C1B2A4BE11600F52CBD /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
 		40F70C1D2A4BE27300F52CBD /* UploadTweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetViewModel.swift; sourceTree = "<group>"; };
+		40F70C1F2A4C98C600F52CBD /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		40F70C212A4C998300F52CBD /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				40F70C122A4A939000F52CBD /* User.swift */,
+				40F70C212A4C998300F52CBD /* Tweet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 		4060CF822A4643A400E046B5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				40F70C1F2A4C98C600F52CBD /* FeedViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -497,6 +503,8 @@
 				40F70C112A4A91EF00F52CBD /* UserService.swift in Sources */,
 				40F70C0D2A4A650F00F52CBD /* ImagePicker.swift in Sources */,
 				4060CF702A46431300E046B5 /* ContentView.swift in Sources */,
+				40F70C222A4C998300F52CBD /* Tweet.swift in Sources */,
+				40F70C202A4C98C600F52CBD /* FeedViewModel.swift in Sources */,
 				4060CF872A4644DD00E046B5 /* TweetRowView.swift in Sources */,
 				40F70C0F2A4A6D2100F52CBD /* ImageUploader.swift in Sources */,
 				4060CF9A2A465B8700E046B5 /* TweetFilterViewModel.swift in Sources */,

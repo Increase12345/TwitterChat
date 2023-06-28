@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TweetRowView: View {
+    let tweet: Tweet
+    
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -34,7 +36,7 @@ struct TweetRowView: View {
                     }
                     
                     // twit caption
-                    Text("I believe in Harvey Dent")
+                    Text(tweet.caption)
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
                 }
@@ -85,9 +87,9 @@ struct TweetRowView: View {
         .padding()
     }
 }
-
-struct TweetRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        TweetRowView()
-    }
-}
+//
+//struct TweetRowView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TweetRowView(tweet: Tweet(uid: "", caption: "Example", timestamp: Date().timeIntervalSinceNow, likes: 10))
+//    }
+//}
