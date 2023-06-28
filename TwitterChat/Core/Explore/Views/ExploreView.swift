@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct ExploreView: View {
+    @ObservedObject var vm = ExploreViewModel()
+    
     var body: some View {
-        NavigationStack {
-            VStack {
-                ScrollView {
-                    LazyVStack {
-                        ForEach(0..<24, id: \.self) { _ in
-                            NavigationLink {
-                                ProfileView()
-                            } label: {
-                                UserRowView()
-                            }
+        VStack {
+            ScrollView {
+                LazyVStack {
+                    ForEach(vm.users, id: \.id) { user in
+                        NavigationLink {
+                            ProfileView(user: user)
+                        } label: {
+                            UserRowView(user: user)
                         }
                     }
                 }
             }
-            .navigationTitle("Explore")
-            .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationTitle("Explore")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
