@@ -42,4 +42,17 @@ struct TweetService {
             completion(tweets.sorted(by: { $0.timestamp.dateValue() > $1.timestamp.dateValue()  }))
         }
     }
+    
+    func likeTweet(_ tweet: Tweet) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        guard let tweetId = tweet.id else { return }
+        
+        let userLikesRef = Firestore.firestore().collection("users").document(uid).collection("user-likes")
+        
+        Firestore.firestore().collection("tweets").document(tweetId).updateData(["likes": tweet.likes + 1]) { _ in
+            userLikesRef.document(tweetId).setData([:]) { _ in
+                print("did like tweet")
+            }
+        }
+    }
 }
