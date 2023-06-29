@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 import FirebaseFirestoreSwift
 
 struct User: Identifiable, Codable {
@@ -14,6 +15,10 @@ struct User: Identifiable, Codable {
     let fullName: String
     let profileImageUrl: String
     let email: String
+    
+    var isCurrentUser: Bool {
+        Auth.auth().currentUser?.uid == id
+    }
 }
 
 
