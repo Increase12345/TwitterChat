@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct TweetRowView: View {
-    let vm: TweetRowViewModel
+    @ObservedObject var vm: TweetRowViewModel
     
     init(tweet: Tweet) {
         self.vm = TweetRowViewModel(tweet: tweet)
@@ -73,10 +73,12 @@ struct TweetRowView: View {
                 
                 // button heart
                 Button {
-                    vm.likeTweet()
+                    vm.tweet.didLike ?? false ? vm.unLikeTweet(): vm.likeTweet()
                 } label: {
-                    Image(systemName: "heart")
+                    Image(systemName: vm.tweet.didLike ?? false ? "heart.fill": "heart")
                         .font(.subheadline)
+                        .foregroundColor(vm.tweet.didLike ?? false ? .red: .secondary)
+                    
                 }
                 Spacer()
                 
